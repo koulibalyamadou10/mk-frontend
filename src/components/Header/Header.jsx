@@ -5,7 +5,7 @@ const Header = () => {
 	return <header className='flex justify-around py-3'>
 		<div style={{alignItems:'center'}} className="left flex gap-24">
 			<div className="logo">
-				<img src="/vite.svg" alt="" srcset="" />
+				<img src="/vite.svg" alt="" />
 			</div>
 
 			<div className='flex gap-6'>
@@ -13,7 +13,7 @@ const Header = () => {
 				<a className='text-lg hover:text-orange-600' href="#">Réalisations</a>
 				<a className='text-lg hover:text-orange-600' href="#">Graphistes</a>
 				<a className='text-lg hover:text-orange-600' href="#">Aide</a>
-				<a className='text-lg hover:text-orange-600' href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+				<a className='text-lg hover:text-orange-600' href="#"><i className="fa-solid fa-magnifying-glass"></i></a>
 			</div>
 		</div>
 
