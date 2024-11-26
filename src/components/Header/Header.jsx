@@ -1,26 +1,27 @@
 import React from 'react'
-import KButton from '../utilities/KButton'
+import KButtonPrimary from '../utilities/KButtonPrimary.jsx'
+import DM_02 from '../../assets/logos/DM-02.png'
 
 const Header = () => {
-	return <header className='flex justify-around py-3'>
-		<div style={{alignItems:'center'}} className="left flex gap-24">
+	return <header className='flex justify-around items-center py-3 bg-[#00c2e3]'>
+		<div className="left flex items-center gap-24">
 			<div className="logo">
-				<img src="/vite.svg" alt="" />
+				<img width="70" height="70" className="object-cover" src={DM_02} alt="" />
 			</div>
 
 			<div className='flex gap-6'>
-				<a className='text-lg hover:text-orange-600' href="#">Annonces</a>
-				<a className='text-lg hover:text-orange-600' href="#">Réalisations</a>
-				<a className='text-lg hover:text-orange-600' href="#">Graphistes</a>
-				<a className='text-lg hover:text-orange-600' href="#">Aide</a>
-				<a className='text-lg hover:text-orange-600' href="#"><i className="fa-solid fa-magnifying-glass"></i></a>
+				<a className='text-sm hover:text-white' href="#">Annonces</a>
+				<a className='text-sm hover:text-white' href="#">Réalisations</a>
+				<a className='text-sm hover:text-white' href="#">Graphistes</a>
+				<a className='text-sm hover:text-white' href="#">Aide</a>
+				<a className='text-sm hover:text-white' href="#"><i className="fa-solid fa-magnifying-glass"></i></a>
 			</div>
 		</div>
 
-		<div style={{alignItems:'center'}} className="rigth flex gap-5">
-			<a href='#' className='text-lg hover:text-orange-600'>S'inscrire</a>
-			<a href='#' className='text-lg hover:text-orange-600'>Se connecter</a>
-			<KButton></KButton>
+		<div className="rigth flex items-center gap-5">
+			<a href='#' className='text-sm hover:text-white'>S'Inscrire</a>
+			<a href='#' className='text-sm hover:text-white'>Se connecter</a>
+			<KButtonPrimary></KButtonPrimary>
 		</div>
 	</header>
 }
